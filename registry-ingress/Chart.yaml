@@ -1,0 +1,6 @@
+apiVersion: v2
+name: registry-auth
+description: A Helm chart for registry-ingress
+type: application
+version: 0.1.0
+appVersion: 1.0.0
