@@ -60,3 +60,12 @@ helm upgrade --install -f registry-ingress/values.yaml registry-ingress registry
 ```shell
 helm upgrade --install -f apps/values.yaml apps apps --create-namespace --namespace apps --wait
 ```
+
+## PostgreSQL
+
+```shell
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
+
+helm upgrade --install -f postgresql/values.yaml postgresql bitnami/postgresql --create-namespace --namespace apps --wait
+```
